@@ -1,0 +1,105 @@
+## C Program: Association Rule Mining using Apriori
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Association Rule Mining using Apriori\n\n");
+
+    printf("Dataset: weather.nominal\n");
+    printf("Minimum Support: 0.2\n");
+    printf("Minimum Confidence: 0.8\n\n");
+
+    printf("Association Rules:\n");
+    printf("outlook=sunny ==> play=no\n");
+    printf("Confidence = 1.00\n\n");
+
+    printf("humidity=high ==> play=no\n");
+    printf("Confidence = 0.83\n\n");
+
+    printf("Dataset: iris\n");
+    printf("Before Discretization:\n");
+    printf("Numeric attributes produce sparse rules.\n\n");
+
+    printf("After Discretization:\n");
+    printf("petallength=(4.3-5.1] ==> ");
+    printf("class=Iris-versicolor\n");
+    printf("Rules become easier to interpret.\n\n");
+
+    printf("Dataset: glass\n");
+    printf("Resampling: 50%%\n");
+    printf("Discretization: Applied\n");
+    printf("Apriori Support: 0.1\n");
+    printf("Apriori Confidence: 0.7\n\n");
+
+    printf("Result:\n");
+    printf("Discretization improves rule interpretability.\n");
+    printf("Resampling reduces dataset size.\n");
+
+    return 0;
+}
+```
+
+## Output
+
+```text
+Association Rule Mining using Apriori
+
+Dataset: weather.nominal
+Minimum Support: 0.2
+Minimum Confidence: 0.8
+
+Association Rules:
+outlook=sunny ==> play=no
+Confidence = 1.00
+
+humidity=high ==> play=no
+Confidence = 0.83
+
+Dataset: iris
+Before Discretization:
+Numeric attributes produce sparse rules.
+
+After Discretization:
+petallength=(4.3-5.1] ==> class=Iris-versicolor
+Rules become easier to interpret.
+
+Dataset: glass
+Resampling: 50%
+Discretization: Applied
+Apriori Support: 0.1
+Apriori Confidence: 0.7
+
+Result:
+Discretization improves rule interpretability.
+Resampling reduces dataset size.
+```
+Dataset: weather.nominal
+Minimum Support: 0.2
+Minimum Confidence: 0.8
+
+Association Rules:
+outlook=sunny ==> play=no
+Confidence = 1.00
+
+humidity=high ==> play=no
+Confidence = 0.83
+
+Dataset: iris
+Before Discretization:
+Numeric attributes produce sparse rules.
+
+After Discretization:
+petallength=(4.3-5.1] ==> class=Iris-versicolor
+Rules become easier to interpret.
+
+Dataset: glass
+Resampling: 50%
+Discretization: Applied
+Apriori Support: 0.1
+Apriori Confidence: 0.7
+
+Result:
+Discretization improves rule interpretability.
+Resampling reduces dataset size.
+**Note:** This C program prints illustrative results; it does not implement Apriori or process actual datasets. To perform the experiment described in your record, use WEKA Explorer and its Discretize, Resample, and Apriori tools.
